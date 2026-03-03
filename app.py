@@ -3,8 +3,8 @@ import joblib
 import numpy as np
 import pandas as pd
 
-scaler = joblib.load("artifacts/preprocess.pkl")
-model = joblib.load("artifacts/model.pkl")
+scaler = joblib.load("preprocess.pkl")
+model = joblib.load("model.pkl")
 
 def main():
     st.title('ML Heart Attack Prediction Model Deployment')
@@ -41,4 +41,5 @@ def pred(features):
 
 if __name__ == '__main__':
     main()
+
 
